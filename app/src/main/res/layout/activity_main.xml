@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextLimite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Valor limite"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextGastos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Gastos"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonAtualizar"
+        android:onClick="botaoAtualiza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atualizar" />
+
+    <TextView
+        android:id="@+id/textViewAtualiza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        tools:text="Atualizado:" />
+</LinearLayout>
